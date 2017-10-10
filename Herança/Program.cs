@@ -7,7 +7,7 @@ namespace curso
     {
         static void Main(string[] args)
         {
-            List<FiguraGeometrica> figura = new List<FiguraGeometrica>();
+            List<IFiguraGeometrica> figura = new List<IFiguraGeometrica>();
             
             OpcaoTela opcao;
             bool continuar = true;

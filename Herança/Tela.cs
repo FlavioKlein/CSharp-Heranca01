@@ -59,7 +59,7 @@ namespace curso
             return new Triangulo(a, b, c);
         }
 
-        public static void imprimirResultado(List<FiguraGeometrica> figura)
+        public static void imprimirResultado(List<IFiguraGeometrica> figura)
         {
             Console.Clear();
             Console.WriteLine("Total de figuras: " + figura.Count);

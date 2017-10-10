@@ -1,7 +1,7 @@
 ﻿namespace curso
 
 {
-    class Retangulo : FiguraGeometrica
+    class Retangulo : IFiguraGeometrica
     {
         public double largura { get; private set; }
         public double comprimento { get; private set; }
@@ -12,12 +12,12 @@
             this.comprimento = comprimento;
         }
 
-        public override double area()
+        public double area()
         {
             return largura * comprimento;
         }
 
-        public override double perimetro()
+        public double perimetro()
         {
             return 0.0;
         }

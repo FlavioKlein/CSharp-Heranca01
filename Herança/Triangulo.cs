@@ -2,7 +2,7 @@
 
 namespace curso
 {
-    class Triangulo: FiguraGeometrica
+    class Triangulo: IFiguraGeometrica
     {
         public double a { get; private set; }
         public double b { get; private set; }
@@ -15,14 +15,14 @@ namespace curso
             this.c = c;
         }
 
-        public override double area()
+        public double area()
         {
             double p;
             p = (a + b + c) / 2.0;
             return Math.Sqrt(p * (p - a) * (p - b) * (p - c));
         }
 
-        public override double perimetro()
+        public double perimetro()
         {
             return 0.0;
         }

@@ -1,9 +1,9 @@
 ﻿
 namespace curso
 {
-    abstract class FiguraGeometrica
+    interface IFiguraGeometrica
     {
-        public abstract double area();
-        public abstract double perimetro();
+        double area();
+        double perimetro();
     }
 }
